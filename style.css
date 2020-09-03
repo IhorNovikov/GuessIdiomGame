@@ -1,11 +1,8 @@
-
-
 #container {
 	position:relative;
-	margin: 10px 15%;
+	margin: 0 auto;
 	height: auto;
-    width: 1000px;
-	/*background: #F0E68C;*/
+    max-width: 1000px;
 	color:white;
 }
 
@@ -67,12 +64,11 @@ button:hover {
 	
 #f, #s, #t {
 	position: absolute;
-	left: 900px;
+	left: 870px;
 	background: transparent;	
 	width: auto;
 	height:auto;
-	color: red;
-	font-size:30px;	*/
+	font-size:30px;	
 }
 #f{	
 	top: 181px;
@@ -86,7 +82,6 @@ button:hover {
 }*/
 
 #result {
-	
 	color:black;
 	font-size:30px;
 	margin: 10px;
