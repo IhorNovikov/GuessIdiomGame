@@ -1,95 +1,118 @@
-#container {
-	position:relative;
-	margin: 0 auto;
-	height: auto;
-    max-width: 1000px;
-	color:white;
+body {
+  background: url(./assets/img/rain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  position: relative;
+  margin: 10rem auto;
+  height: auto;
+  max-width: 1000px;
+  color: white;
 }
 
 h1 {
-	margin-left: 33%;
-	font-size: 50px;
-	text-transform: uppercase;
-	background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #0B2349;
-	display: table;
-	margin: 20px auto;
+  display: table;
+  margin: 20px auto;
+  font-size: 50px;
+  color: #0B2349;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-button{
-	background: #DC143C;
-	font-size:30px;
-	width:120px;
-	color:inherit;
-	outline:none;
-	border: 0;
-    padding: 0;
-	margin:15px 42% ;	
+button {
+  padding: 0;
+  margin: 15px 42%;
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  color: inherit;
+  background: #DC143C;
+  opacity: 0.7;
+  outline: none;
+  border: 0;
+  border-radius: 50%;
+  /* delete button effects for android */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+  opacity: 0.85;
+  transition: all ease 0.5s;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #idiom {
-	background: #DC143C;
-	color:white;
-	text-align: center;
-	font-size:40px;
-    margin: 10px;
-	padding:15px 50px;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin: 10px;
+  padding: 15px 50px;
+  background: #DC143C;
+  opacity: 0.7;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-
-
-
-#first, #second, #third {
-	background: #7FFFD4;
-	height:60px;	
-	font-size:30px;
-	color: white;
-	margin: 10px;
-	padding:15px 50px;	
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}	
-
-
-#first:hover, #second:hover, #third:hover {
-	color: #808000;
-	
-}	
-	
-#f, #s, #t {
-	position: absolute;
-	left: 870px;
-	background: transparent;	
-	width: auto;
-	height:auto;
-	font-size:30px;	
-}
-#f{	
-	top: 181px;
+#first,
+#second,
+#third {
+  height: 60px;
+  margin: 10px;
+  padding: 15px 50px;
+  font-size: 30px;
+  color: rgb(7, 1, 1);
+  background: rgba(127, 255, 212, 0.5);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-#s{
-	top: 280px;
+#first:hover,
+#second:hover,
+#third:hover {
+  cursor: pointer;
+  background: rgba(127, 255, 212, 0.7);
+  transition: all ease 0.3s;
 }
-#t{
-	top: 380px;
-}*/
+
+#f,
+#s,
+#t {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 870px;
+  font-size: 30px;
+  background: transparent;
+}
+
+#f {
+  top: 181px;
+}
+
+#s {
+  top: 280px;
+}
+
+#t {
+  top: 380px;
+}
+
+#reset {
+  display: none;
+}
 
 #result {
-	color:black;
-	font-size:30px;
-	margin: 10px;
-	text-transform: uppercase;
-	background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #0B2349;
-	display: table;
-	margin: 20px auto;
+  display: table;
+  margin: 20px auto;
+  color: black;
+  font-size: 30px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
 }
